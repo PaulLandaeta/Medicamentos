@@ -1,20 +1,37 @@
-## TYPO3 v6.2
-# Ignore several upload and file directories.
-/fileadmin/user_upload/
-/fileadmin/_temp_/
-/fileadmin/_processed_/
-/uploads/
-# Ignore cache
-/typo3conf/temp_CACHED*
-/typo3conf/temp_fieldInfo.php
-/typo3conf/deprecation_*.log
-/typo3conf/AdditionalConfiguration.php
-# Ignore system folders, you should have them symlinked.
-# If not comment out the following entries.
-/typo3
-/typo3_src
-/typo3_src-*
-/.htaccess
-/index.php
-# Ignore temp directory.
-/typo3temp/
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+*~
+*.sw[mnpcod]
+*.log
+*.tmp
+*.tmp.*
+log.txt
+*.sublime-project
+*.sublime-workspace
+.vscode/
+npm-debug.log*
+
+.idea/
+.sass-cache/
+.tmp/
+.versions/
+coverage/
+dist/
+node_modules/
+hooks/
+bower_components/
+resources/android/
+resources/ios/
+tmp/
+temp/
+hooks/
+platforms/
+plugins/
+plugins/android.json
+plugins/ios.json
+$RECYCLE.BIN/
+
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate
