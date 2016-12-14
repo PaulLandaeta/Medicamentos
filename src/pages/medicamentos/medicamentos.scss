@@ -1,5 +1,15 @@
 page-medicamentos {
   .content{
-    background: #E57373;
+    background: white;
+  }
+  .segment-md .segment-button{
+    color : #fff;
+
+  }
+  .segment-md .segment-button.segment-activated{
+    border-color: #fff;
+  }
+  .list-md{
+    margin: -13px -16px 16px -16px;
   }
 }

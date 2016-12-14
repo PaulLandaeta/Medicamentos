@@ -9,10 +9,83 @@
   <ion-navbar color="red">
     <ion-title>Medicamentos</ion-title>
   </ion-navbar>
-
+  <ion-toolbar no-border-top color="red">
+      <ion-segment [(ngModel)]="medicamentos">
+        <ion-segment-button value="Todos" >
+          Todos
+        </ion-segment-button>
+        <ion-segment-button value="Peru">
+          Peru
+        </ion-segment-button>
+        <ion-segment-button value="Argentina">
+          Argentina
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
 </ion-header>
 
-
 <ion-content padding>
+  <div [ngSwitch]="medicamentos">
+    <ion-list *ngSwitchCase="'Todos'">
+      <ion-item-group *ngFor="let char of abc">
+        <ion-item-divider color="light">{{char}}</ion-item-divider>
+        <ion-item [hidden]="!myVar" *ngFor="let hero of heroes">{{hero.name}}</ion-item>
+      </ion-item-group>
 
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Peru'">
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/abc.jpg">
+        </ion-thumbnail>
+        <h2>Luna</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/abc.jpg">
+        </ion-thumbnail>
+        <h2>Milo</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/abc.jpg">
+        </ion-thumbnail>
+        <h2>Bandit</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/abc.jpg">
+        </ion-thumbnail>
+        <h2>Nala</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Argentina'">
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/abc.jpg">
+        </ion-thumbnail>
+        <h2>Daffy</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/abc.jpg">
+        </ion-thumbnail>
+        <h2>Huey</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/abc.jpg">
+        </ion-thumbnail>
+        <h2>Dewey</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/abc.jpg">
+        </ion-thumbnail>
+        <h2>Louie</h2>
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>
