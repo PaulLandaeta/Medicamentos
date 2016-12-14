@@ -1,9 +1,13 @@
 import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
+import { Home } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { SlidesPage } from '../pages/slides/slides';
+import { Hoy } from '../pages/hoy/hoy';
+import { Reporte } from '../pages/reporte/reporte';
+import { MedicamentosPage } from '../pages/medicamentos/medicamentos';
+import { FarmaciasPage } from '../pages/farmacias/farmacias';
 
 
 @Component({
@@ -13,7 +17,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage: any = HelloIonicPage;
+  rootPage: any = Home;
   pages: Array<{title: string, component: any}>;
 
   constructor(
@@ -24,9 +28,13 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
+      { title: 'Hello Ionic', component: Home },
       { title: 'My First List', component: ListPage },
-      { title: 'Slides', component: SlidesPage }
+      { title: 'Slides', component: SlidesPage },
+      { title: 'Hoy', component: Hoy },
+      { title: 'Reporte', component: Reporte },
+      { title: 'Reporte', component: MedicamentosPage },
+      { title: 'Reporte', component: FarmaciasPage }
     ];
   }
 

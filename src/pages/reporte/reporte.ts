@@ -11,7 +11,7 @@ import { NavController } from 'ionic-angular';
   selector: 'page-reporte',
   templateUrl: 'reporte.html'
 })
-export class ReportePage {
+export class Reporte {
 
   constructor(public navCtrl: NavController) {}
 

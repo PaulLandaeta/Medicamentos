@@ -1,0 +1,34 @@
+page-home {
+  .grid-full ion-row {
+    height: 100%;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .grid-full ion-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    top: 50%;
+  }
+  .centered{
+    font-size: 250%;
+    position: relative;;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+  }
+  .cell-1 {
+    background-color: #FFEBEE ;
+
+  }
+  .cell-2 {
+    background-color: #FFCDD2;
+  }
+  .cell-3 {
+    background-color: #EF9A9A;
+  }
+  .cell-4 {
+    background-color: #E57373;
+  }
+}

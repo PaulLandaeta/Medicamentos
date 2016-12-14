@@ -11,7 +11,7 @@ import { NavController } from 'ionic-angular';
   selector: 'page-hoy',
   templateUrl: 'hoy.html'
 })
-export class HoyPage {
+export class Hoy {
 
   constructor(public navCtrl: NavController) {}
 

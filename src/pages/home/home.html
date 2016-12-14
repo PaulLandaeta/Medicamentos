@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar color="red">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Menu</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="grid-full">
+  <ion-row>
+     <ion-col class="cell-1" (click)="itemTapped('Hoy')">
+       <div class="centered">
+         <ion-icon ios="ios-clipboard" md="md-clipboard"></ion-icon>
+         Hoy
+       </div>
+     </ion-col>
+     <ion-col class="cell-2" (click)="itemTapped('Reporte')">
+       <div class="centered">
+         <ion-icon ios="ios-pie" md="md-pie"></ion-icon>
+         Reporte
+       </div>
+     </ion-col>
+     <ion-col class="cell-3" (click)="itemTapped('Farmacias')">
+        <div class="centered">
+          <ion-icon ios="ios-home" md="md-home"></ion-icon>
+          Farmacias
+        </div>
+     </ion-col>
+     <ion-col class="cell-4" (click)="itemTapped('Medicamentos')">
+       <div class="centered">
+         <ion-icon ios="ios-flask" md="md-flask"></ion-icon>
+         Medicamentos
+       </div>
+     </ion-col>
+   </ion-row>
+</ion-content>
